@@ -328,7 +328,7 @@ def main():
                 try:
                     # Convert aspect ratio to proper format
                     result = generate_hd_image(
-                        prompt=st.session_state.enhanced_prompt or prompt,
+                        prompt=st.session_state.enhanced_prompt or user_prompt,
                         api_key=st.session_state.api_key,
                         num_results=num_images,
                         aspect_ratio=aspect_ratio,  # Already in correct format (e.g. "1:1")
